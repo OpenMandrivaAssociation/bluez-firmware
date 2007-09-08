@@ -1,6 +1,6 @@
 %define	name	bluez-firmware
 %define version 1.2
-%define release %mkrel 1
+%define release %mkrel 2
 
 Name: 		%{name}
 Summary: 	Bluetooth firmware utilities
@@ -9,7 +9,7 @@ Release: 	%{release}
 
 Source:		%{name}-%{version}.tar.bz2
 URL:		http://bluez.sourceforge.net/
-License:	GPL
+License:	GPL+
 Group:		Communications
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Provides:	bluez-bluefw
@@ -52,6 +52,4 @@ rm -fr %buildroot
 %defattr(-,root,root)
 %doc AUTHORS ChangeLog 
 %{_libdir}/firmware/*
-
-
 
