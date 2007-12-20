@@ -11,6 +11,7 @@ Source:		%{name}-%{version}.tar.bz2
 URL:		http://bluez.sourceforge.net/
 License:	Freeware
 Group:		Communications
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Provides:	bluez-bluefw
 Obsoletes:	bluez-bluefw
 
