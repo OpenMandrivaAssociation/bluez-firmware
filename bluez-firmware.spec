@@ -29,7 +29,7 @@ The BLUETOOTH trademarks are owned by Bluetooth SIG, Inc., USA.
 
 %build
 %configure2_5x  --mandir=%{_mandir}
-%make CFLAGS="$RPM_OPT_FLAGS"
+%make
 										
 %install
 rm -rf $RPM_BUILD_ROOT
