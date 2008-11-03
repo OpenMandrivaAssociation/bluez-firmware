@@ -32,8 +32,8 @@ The BLUETOOTH trademarks are owned by Bluetooth SIG, Inc., USA.
 %make
 										
 %install
-rm -rf $RPM_BUILD_ROOT
-make DESTDIR=$RPM_BUILD_ROOT install
+rm -rf %{buildroot}
+make DESTDIR=%{buildroot} install
 
 %clean
 rm -fr %buildroot
