@@ -1,6 +1,6 @@
 %define	name	bluez-firmware
 %define version 1.2
-%define release %mkrel 4
+%define release %mkrel 5
 
 Name: 		%{name}
 Summary: 	Bluetooth firmware utilities
@@ -14,6 +14,7 @@ Group:		Communications
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Provides:	bluez-bluefw
 Obsoletes:	bluez-bluefw
+BuildArch:	noarch
 
 %description
 Bluetooth(TM) Firmware. Package contains firmware images for some
