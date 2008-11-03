@@ -42,4 +42,3 @@ rm -fr %buildroot
 %defattr(-,root,root)
 %doc AUTHORS ChangeLog 
 %{_libdir}/firmware/*
-
