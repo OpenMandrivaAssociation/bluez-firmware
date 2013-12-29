@@ -1,6 +1,6 @@
 %define	name	bluez-firmware
 %define version 1.2
-%define release 7
+%define release 8
 
 Name: 		%{name}
 Summary: 	Bluetooth firmware utilities
