@@ -1,7 +1,7 @@
 Name:		bluez-firmware
 Summary:	Bluetooth firmware utilities
 Version:	1.2
-Release:	7
+Release:	9
 Source:		http://bluez.sf.net/download/%{name}-%{version}.tar.gz
 URL:		http://bluez.sourceforge.net/
 License:	Freeware
