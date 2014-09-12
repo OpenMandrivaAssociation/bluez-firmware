@@ -1,19 +1,12 @@
-%define	name	bluez-firmware
-%define version 1.2
-%define release %mkrel 6
-
-Name: 		%{name}
-Summary: 	Bluetooth firmware utilities
-Version: 	%{version}
-Release: 	%{release}
-
-Source:		%{name}-%{version}.tar.bz2
+Name:		bluez-firmware
+Summary:	Bluetooth firmware utilities
+Version:	1.2
+Release:	7
+Source:		http://bluez.sf.net/download/%{name}-%{version}.tar.gz
 URL:		http://bluez.sourceforge.net/
 License:	Freeware
 Group:		Communications
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-Provides:	bluez-bluefw
-Obsoletes:	bluez-bluefw
+%rename		bluez-bluefw
 BuildArch:	noarch
 
 %description
@@ -29,17 +22,13 @@ The BLUETOOTH trademarks are owned by Bluetooth SIG, Inc., USA.
 %setup -q
 
 %build
-%configure2_5x --libdir=/lib
+%configure --libdir=/lib
 %make
 										
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
-%clean
-rm -fr %buildroot
 
 %files
-%defattr(-,root,root)
 %doc AUTHORS ChangeLog 
 /lib/firmware/*
