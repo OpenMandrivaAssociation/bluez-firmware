@@ -22,7 +22,7 @@ The BLUETOOTH trademarks are owned by Bluetooth SIG, Inc., USA.
 %setup -q
 
 %build
-%configure --libdir=/lib
+%configure2_5x --libdir=/lib
 %make
 										
 %install
