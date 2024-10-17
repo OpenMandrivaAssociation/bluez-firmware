@@ -3,7 +3,7 @@ Summary:	Bluetooth firmware utilities
 Version:	1.2
 Release:	11
 Source:		http://bluez.sf.net/download/%{name}-%{version}.tar.gz
-URL:		http://bluez.sourceforge.net/
+URL:		https://bluez.sourceforge.net/
 License:	Freeware
 Group:		Communications
 %rename		bluez-bluefw
