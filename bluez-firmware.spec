@@ -9,6 +9,11 @@ Group:		Communications
 %rename		bluez-bluefw
 BuildArch:	noarch
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 Bluetooth(TM) Firmware. Package contains firmware images for some
    Bluetooth(TM) adapters. Currently supported are: 
